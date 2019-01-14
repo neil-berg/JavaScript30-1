@@ -1,0 +1,83 @@
+html {
+  font-size: 10px;
+  background: url(https://source.unsplash.com/wfBXHhMG67o) bottom center;
+  background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.keys-brass, .keys-drums, .keys-synth {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  margin: 1rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.keys-brass > .key {
+  border: .4rem solid rgb(145, 228, 134);
+}
+
+.keys-synth > .key {
+  border: .4rem solid rgb(201, 134, 228);
+}
+
+.keys-drums > .key {
+  border: .4rem solid rgb(226, 216, 188); 
+}
+
+.playing {
+  transform: scale(1.1);
+}
+
+.keys-brass .playing {
+  border-color: rgb(145, 228, 134);
+  box-shadow: 0 0 2rem rgb(145, 228, 134);
+}
+
+.keys-synth .playing {
+  border-color: rgb(201, 134, 228);
+  box-shadow: 0 0 2rem rgb(201, 134, 228);
+}
+
+.keys-drums .playing {
+  border-color: rgb(226, 216, 188);
+  box-shadow: 0 0 2rem rgb(226, 216, 188);
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
